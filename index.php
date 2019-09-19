@@ -31,6 +31,7 @@ $updateURL = curl_init("http://localhost/project/menu/update.php");
 curl_setopt($updateURL, CURLOPT_RETURNTRANSFER, true);
 $updateresponse = curl_exec($updateURL);
 $updateresult = json_decode($updateresponse);
+// comments
 
 echo "<script>alert('$updateresult');</script>";
    
